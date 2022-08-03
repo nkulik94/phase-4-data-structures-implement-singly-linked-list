@@ -122,7 +122,7 @@ describe LinkedList do
         linked_list.append(Node.new(1))
         linked_list.append(Node.new(2))
         # 1 -> 2
-        linked_list.add_after(2, Node.new(3))
+        linked_list.add_after(1, Node.new(3))
         # 1 -> 2 -> 3
         expect(linked_list.head.next_node.next_node.data).to eq(3)  
       end
